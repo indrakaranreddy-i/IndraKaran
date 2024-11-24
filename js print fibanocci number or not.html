@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        main();
+        function main(){
+            let n=Number(prompt('enter the number:'))
+            let a=0
+            let b=1
+            while(a<n){
+                let c =a+b
+                a=b
+                b=c
+            }if (a===n){
+                console.log('fabinocci number')
+            }else{
+                console.log('not fabanocci number')
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

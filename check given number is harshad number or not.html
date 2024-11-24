@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        main();
+        function main(){
+            let n=Number(prompt('enter the number'))
+            let store=n
+            let fact=1
+            let res=0
+            while(n>0){
+                rem=n%10
+
+                for(let i=1;i<=rem;i++){
+                    fact*=i
+
+                }
+                res+=fact
+
+                n=Math.trunc(n/10)
+            }
+            if (res==store){
+                console.log('strong number')
+            }else{
+                console.log('not strong number')
+            }
+
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

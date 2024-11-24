@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        main();
+        function main(){
+            let n=Number(prompt('enter the number'))
+            let store=n;
+            let res=0
+            while(n>0){
+                rem=n%10
+                res=(res*10)+rem
+                n=Math.trunc(n/10)
+            }
+            if (res==store){
+                console.log('palondrome number')
+            }else{
+                console.log('not palondrome')
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

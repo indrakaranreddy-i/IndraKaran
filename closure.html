@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var n=10
+        function outer(){
+            var a=1
+            function inner(){
+                var b=2
+                console.log(a,b)
+            }
+            return inner
+            
+        }
+        let func=outer()
+        console.log(func)
+        func();
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

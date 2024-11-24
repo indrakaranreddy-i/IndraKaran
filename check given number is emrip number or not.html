@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        // Get user input
+        let n = Number(prompt('Enter the number'));
+        
+
+        // Function to check if a number is prime
+        function prime(num) {
+            let count=0
+            for (let i = 1; i <=num; i++) {
+                if(num%i==0){
+                count+=1
+            }
+        
+        }
+        if(count==2){
+            return true
+
+        }
+                
+        }
+
+        // Function to reverse a number
+        function reverse(num) {
+            let res = 0;
+            while (num > 0) {
+                let rem = num % 10;
+                res = res * 10 + rem;
+                num = Math.trunc(num / 10);
+            }
+            return res;
+        }
+
+        // Reverse the number
+        let reversedNumber = reverse(n);
+
+        // Check if both the original number and its reverse are prime, and they are not equal
+        if (prime(n) && prime(reversedNumber) && n !== reversedNumber) {
+            console.log(n + ' is an emirp number');
+        } else {
+            console.log(n + ' is not an emirp number');
+        }
+    </script>
+    <title>Emirp Number Check</title>
+</head>
+<body>
+</body>
+</html>

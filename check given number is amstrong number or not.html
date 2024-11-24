@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script>
+        main();
+        function main(){
+            let n=Number(prompt('enter the number'))
+            store=n
+            store_1=store
+            let count=0
+            while(n>0){
+                let rem=n%10
+                n=Math.trunc(n/10)
+                while(rem>0){
+                    count+=1
+                    rem=Math.trunc(rem/10)
+                }
+            }
+            let res=0
+            
+            while(store>0){
+                let rem=store%10
+                res+=rem**count
+                store=Math.trunc(store/10)
+
+
+            }
+            if(res==store_1){
+                console.log('amstrong number')
+            }else{
+                console.log('not amstrong number')
+            } 
+            
+
+        }
+     </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

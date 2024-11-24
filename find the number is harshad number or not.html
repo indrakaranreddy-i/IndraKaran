@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        main();
+        function main(){
+            let n=Number(prompt('enter the number'))
+            let res=0
+            let store=n
+            while(n>0){
+                rem=n%10
+                res+=rem
+                n=Math.trunc(n/10)
+
+            }
+            if (store%res==0){
+                console.log('harshad number')
+
+            }else{
+                console.log('not harshad number')
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

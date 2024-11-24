@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        main();
+        function main(){
+            let n=Number(prompt('enter the number'))
+            let pos=0
+            let res=0
+            while(n>0){
+                rem=n%10
+                res+=rem*(2**pos)
+                pos+=1
+                n=Math.trunc(n/10)
+
+            }
+            console.log(res)
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

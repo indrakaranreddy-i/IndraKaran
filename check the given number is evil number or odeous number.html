@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+    main ();
+    function main(){
+        let n=Number(prompt('enter the number'))
+        let count=0
+        while(n>0){
+            rem=n%2
+            if (rem==1){
+                count+=1
+            }
+            n=Math.trunc(n/2)
+        }
+        if (count%2==0){
+            console.log('evil number')
+        }else{
+            console.log('odeous number')
+        }
+    }
+   </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+    function main(){
+        let n = Number(prompt('Enter a number:'));
+        let store = n;
+        let count = 0;
+        
+        // Prime number check
+        for (let i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                count++;
+            }
+        }
+        
+        // If the number is prime
+        if (count == 2) {
+            let res = 0;
+            let rem;
+            n = store;  // Reset n to original value before palindrome check
+            
+            // Palindrome check
+            while (n > 0) {
+                rem = n % 10;
+                res = res * 10 + rem;
+                n = Math.trunc(n / 10);
+            }
+            
+            if (store == res) {
+                console.log('palyprime');  // Prime and palindrome
+            } else {
+                console.log('not palyprime (prime but not palindrome)');
+            }
+        } else {
+            console.log('not palyprime (not a prime number)');
+        }
+    }
+   </script>
+    <title>Palyprime Checker</title>
+</head>
+<body>
+    <button onclick="main()">Check Palyprime</button>
+</body>
+</html>

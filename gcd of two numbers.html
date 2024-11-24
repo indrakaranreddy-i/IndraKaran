@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        main();
+        function main(){
+            a=Number(prompt('enter the number a'))
+            b=Number(prompt('enter the number b'))
+            if(a>b){
+                var gcd=b
+            }else{
+                var gcd=a
+            }
+            while(true){
+                if (a%gcd==0 && b%gcd==0){
+                    console.log(gcd)
+                    break
+                }else{
+                    gcd-=1
+                }
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

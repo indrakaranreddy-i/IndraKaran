@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script>
+        main()
+        function main(){
+            let d1 =new Date();
+            let day=d1.getDay();
+            let today='today is'
+            switch(day){
+                case 0:
+                    today+='sunday'
+                    break;
+                case 1:
+                    today+='monday'
+                    break;
+                case 2:
+                    today+='teusday'
+                    break;
+                case 3:
+                    today+='wednesday'
+                    break;
+                case 4:
+                    today+='thursday'
+                    break;
+                case 4:
+                    today+='friday'
+                    break; 
+                case 6:
+                    today+='satudray'
+                    break;
+                default:
+                    today+='invalid'
+                    break;       
+            }
+            console.log(today)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

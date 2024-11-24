@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var n=20
+        function outer(){
+            var i=1
+            function inner(){
+            var j=4
+            console.log(i,j)// var key word has function scope but by lexical enveronment it gets parent address
+        }
+        inner();
+
+        }
+        outer();
+        
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

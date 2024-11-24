@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function main() {
+            let n = Number(prompt('Enter the lower bound value (n):'));
+            let m = Number(prompt('Enter the upper bound value (m):'));
+            let a = 0;
+            let b = 1;
+            let c;
+
+            console.log(`Fibonacci numbers between ${n} and ${m}:`);
+
+            while (a <= m) {
+                if (a >= n) {
+                    console.log(a);
+                }
+                c = a + b;
+                a = b;
+                b = c;
+            }
+        }
+
+        main();
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

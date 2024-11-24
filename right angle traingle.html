@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function main() {
+            for (let i = 1; i <= 5; i++) {
+                let pattern = '';
+                
+                // Loop to add spaces
+                for (let s = 5; s > i; s--) {
+                    pattern += ' ';
+                }
+
+                // Loop to add stars
+                for (let r = 1; r <= i; r++) {
+                    pattern += '*';
+                }
+
+                console.log(pattern);
+            }
+        }
+        
+        main();
+    </script>
+    <title>Pattern Output</title>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script>
+        current()
+        function current()
+        {
+            let units=Number(prompt('enter the number'))
+            let bill=0;
+            if (units>300){
+                console.log(`(bill=${(units-200)*7})`)
+            }else if (units>250){
+                console.log(`(bill=${(units-200)*5})`)
+            } else if (units>200){
+                console.log(`(bill=${(units-200)*3})`)
+            
+            }else if (units>0){
+                console.log(`(bill=0)`)
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

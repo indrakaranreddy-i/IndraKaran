@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        main();
+        function main(){
+            a=Number(prompt('enter number a'))
+            b=Number(prompt('enter number b'))
+            if (a>b){
+                lcm=a
+            }else{
+                lcm=b
+            }
+            while(true){
+                if (lcm%a==0 && lcm%b==0){
+                    console.log(lcm)
+                    break
+                }else{
+                    lcm+=1
+                }
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

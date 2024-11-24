@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+    let obj_1=this;
+    console.log(obj_1)
+    //function declaration
+    function main(){
+        let obj_2=this
+        console.log(obj_2)
+    }
+    main();
+    //function expression
+    let m1=function(){
+        let obj_3=this
+        console.log(obj_3)
+    }
+    m1();
+    // arrow function
+    let m2=()=>{     //arow function will not have this it will take parent this
+        let obj_4=this
+        console.log(obj_4)
+    }
+    m2();
+ 
+   </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

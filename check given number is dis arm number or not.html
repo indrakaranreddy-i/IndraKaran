@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        main();
+        function main(){
+            let n=Number(prompt('enter the number'))
+            let store=n
+            let store_1=n
+            let count=0
+            let res=0
+            while(n>0){
+                rem=n%10
+                n=Math.trunc(n/10)
+                while(rem>0){
+                    count+=1
+                    rem=Math.trunc(rem/10)
+                }
+            }
+            for(;store>0;){
+                rem=store%10
+                res+=rem**count
+                count-=1
+                store=Math.trunc(store/10)
+
+            }
+            if(res==store_1){
+                console.log('disarm number')
+            }else{
+                console.log('not disarm number')
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

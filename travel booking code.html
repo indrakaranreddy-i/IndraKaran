@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let travel_1={
+            travelname:'orange',
+            busid:101,
+            booking:[]
+        }
+        let travel_2={
+            travelname:'vrcr',
+            busid:108,
+            booking:[]
+        }
+        let book=function(name,seatno){
+            console.log(`hey;${name} you booked seat in ${this.travelname} travels with seat no ${seatno}`)
+            let pass={
+                passenger:`${name},${this.busid}${this.travelname}`,
+                
+            }
+            this.booking.push(pass)
+        }
+        book.call(travel_1,'indra',14)
+        book.call(travel_2,'chandu',15)
+        
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

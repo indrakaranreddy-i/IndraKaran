@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function main(){
+            let a = Number(prompt('Enter the start value:'));
+            let b = Number(prompt('Enter the end value:'));
+            let n = Number(prompt('Enter the range:'));
+            console.log(`Fibonacci sequence of length ${n}:`);
+            
+            for (let i = 1; i <= n; i++) {
+                console.log(a);
+                let c = a + b;
+            
+                a = b;
+                b = c;
+            }
+        }
+
+        main();  // Call the function after it's defined
+    </script>
+    <title>Fibonacci Sequence Generator</title>
+</head>
+<body>
+</body>
+</html>
